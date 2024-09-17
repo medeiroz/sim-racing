@@ -1,5 +1,7 @@
 # Sim racing
 
+Trabalho em progresso
+
 ## O que é?
 
 Sim racing é um tipo de competição de automobilismo virtual, onde os pilotos competem em corridas de carros de corrida em simuladores de corrida de computador. O sim racing é uma forma de simulação de corrida de automóveis que é usada para treinar pilotos de corrida, para fornecer uma experiência de corrida realista e para fornecer entretenimento para os jogadores de simulação de corrida.
