@@ -17,7 +17,7 @@
 #include <Bounce2.h>    // https://github.com/thomasfredericks/Bounce2
 #include <BleGamepad.h> // https://github.com/lemmingDev/ESP32-BLE-Gamepad
 
-#define numOfButtons 6
+#define numOfButtons 14
 #define numOfHatSwitches 0
 #define enableX false
 #define enableY false
@@ -34,10 +34,20 @@
 #define enableSteering false
 
 Bounce debouncers[numOfButtons];
-BleGamepad bleGamepad("Volante", "medeiroz", 100); // Name, Manufacturer, HID Report length
+BleGamepad bleGamepad("Volante", "medeiroz", 100);
 
-byte buttonPins[numOfButtons] = {5, 16, 15, 26, 14, 13};
-byte physicalButtons[numOfButtons] = {1, 2, 3, 4, 5, 6};
+byte buttonPins[numOfButtons] = {
+    4, 5, 15, 16, 17, 18,   // Left Buttons
+    13, 14, 27, 26, 25, 33, // Right Buttons
+    19,                     // Left Shifter
+    21,                     // Right Shifter
+};
+byte physicalButtons[numOfButtons] = {
+    1, 2, 3, 4, 5, 6,    // Left Buttons
+    7, 8, 9, 10, 11, 12, // Right Buttons
+    13,                  // Left Shifter
+    14,                  // Right Shifter
+};
 
 void setup()
 {
