@@ -1,16 +1,71 @@
 # Sim racing
 
-Trabalho em progresso
+## 🚧 Trabalho em Progresso
+
+Este repositório documenta o desenvolvimento de um volante e pedais para simulação de corrida (*sim racing*) com funcionalidades avançadas, incluindo force feedback, comunicação via Bluetooth, e diversos componentes personalizados. Cada seção detalha os passos, componentes e funcionalidades integradas ao projeto.
+
+---
+
+## Índice
+
+1. [Roadmap](#roadmap)
+2. [O que é?](#o-que-é)
+3. [Objetivo do Repositório](#objetivo-do-repositório)
+4. [Referências](#referencias)
+5. [Volante + Force Feedback](#volante--force-feedback)
+6. [Aro do Volante](#aro-do-volante)
+7. [Pedais](#pedais)
+8. [Contribuição](#contribuição)
+9. [Licença](#licença)
+
+---
+
+## Roadmap
+
+- [x] Volante com force feedback
+  - [x] Impressão 3D do case
+  - [x] Compra das peças
+  - [x] Montagem do volante
+    - [x] Adicionar botão de centralização
+    - [ ] Adicionar cooler para resfriamento
+    - [ ] Trocar o conector de eneria para um mais robusto
+  - [x] Programação do force feedback
+  - [x] Testes e ajustes
+- [x] Aro do volante
+  - [x] Impressão 3D do aro
+  - [x] Compra das peças
+  - [x] Montagem do aro
+    - [ ] Adicionar couro nas laterais do aro
+  - [x] Programação do aro
+    - [x] Botoes
+      - [x] 12 botões
+      - [x] 2 botões de troca de marcha
+    - [x] Led de status
+      - [x] Ligado
+      - [x] Conexão Bluetooth
+    - [x] Botão On / Off
+    - [ ] Indicador de porcentagem de bateria
+  - [x] Testes e ajustes
+- [x] Pedais
+  - [x] Impressão 3D dos pedais
+  - [x] Compra das peças
+  - [x] Montagem dos pedais
+  - [x] Programação dos pedais
+  - [x] Testes e ajustes
+
+---
 
 ## O que é?
 
-Sim racing é um tipo de competição de automobilismo virtual, onde os pilotos competem em corridas de carros de corrida em simuladores de corrida de computador. O sim racing é uma forma de simulação de corrida de automóveis que é usada para treinar pilotos de corrida, para fornecer uma experiência de corrida realista e para fornecer entretenimento para os jogadores de simulação de corrida.
+Sim racing é uma competição de automobilismo virtual, onde os pilotos simulam corridas em ambiente digital usando equipamentos que imitam a sensação de dirigir um carro de verdade. Estes simuladores são amplamente usados tanto para entretenimento quanto para treinamento profissional, buscando replicar uma experiência de corrida realista com respostas sensoriais e feedback tátil.
 
 ## Objetivo do repositório
 
-Este projeto tem como o objetivo a criação de um simulador de corrida de carros.
+Este projeto visa construir um conjunto de equipamentos para simulação de corrida, incluindo um volante com force feedback, um aro com controles avançados e pedais personalizados. O repositório documenta o processo de construção, programação e configuração, permitindo que outros possam replicar ou modificar o setup para suas próprias necessidades.
 
 ## Referencias
+
+Para aprofundamento sobre simulação de corrida e construção de volantes e pedais, consulte:
 
 - [FFBeast](https://ffbeast.github.io/docs/en/wheel.html)
 - [A Chave Virou](https://www.youtube.com/watch?v=a1Q18tryYvI)
@@ -20,71 +75,68 @@ Este projeto tem como o objetivo a criação de um simulador de corrida de carro
 
 ## Volante + force feedback
 
-### Pra que serve o volante?
+### Descrição
 
-Controla a direção do carro e simula a força que o piloto sente ao dirigir um carro de corrida.
+O volante é a peça principal para controle de direção e sensação de pilotagem. Nele, o force feedback proporciona uma experiência realista ao simular as forças que agem sobre um carro, como curvas acentuadas, frenagens bruscas, e mudanças de terreno.
 
-Todas as sensações que o piloto sente ao dirigir um carro de corrida são transmitidas para o volante, como:
+### Imagens e Videos
 
-- Curvas
-- Aceleração
-- Frenagem
-- Piso molhado
-- Piso seco
-- Piso irregular
-- Zebras
-- Colisões
+🚧 Em breve
 
-### Bibliotecas utilizadas no volante
+### Bibliotecas utilizadas
 
 - [FFBeast](https://ffbeast.github.io/)
   - Utilizado para a criação do force feedback
 
-### Funcionalidades do volante
+### Funcionalidades
 
-- Force feedback
-- Centralização do volante
-- Indicador de volante ligado
+- Force feedback com ajuste de intensidade.
+- Centralização automática.
+- Indicador de status (ligado/desligado).
 
-### Modelos 3D do volante
+### Modelos 3D
 
 - [Case estilo fanatec](https://cults3d.com/en/3d-model/game/fanatec-style-case-for-hoverboard-sim-wheel)
-  - Utilizado para acomodar o motor de hoverboard
+  - Suporte para o motor de hoverboard e componentes eletrônicos
 - [Prensa de mesa](https://cults3d.com/en/3d-model/game/table-clamp-for-fanatec)
-  - Utilizado para preender a case na mesa
+  - Fixação segura do volante à mesa
 
-### Hardware e peças do volante
+### Componentes e ferramentas
 
 - Motor de hoverboard
-  - Utilizado para o force feedback
+  - Utilizado para criar a sensação de resistência e feedback.
 - [ODESC 4.2](https://pt.aliexpress.com/item/1005005763345874.html)
-  - Utilizado para controlar o motor de hoverboard junto ao FFBEAST
-- [ENDER 3 v3 KE](https://www.creality.com/products/creality-ender-3-v3-ke)
-  - Impressora 3D utilizado para a impressão 3D de peças
+  - Controlador para gerenciamento do motor e da intensidade do force feedback junto ao FFBEAST.
 - [1x Botão momentaneo](https://pt.aliexpress.com/item/1005005904666959.html)
   - Botão utilizado para centralizar o volante
 - [Resistor de frenagem 50w 10ohm](https://pt.aliexpress.com/item/1005006825516125.html)
+  - Necessário para dissipação de energia durante o uso intensivo.
 - [Fonte 12v 30a](https://produto.mercadolivre.com.br/MLB-3732855248-fonte-24v-30a-720w-chaveada-estabilizada-bivolt-cabo-_JM)
+  - Fornece energia suficiente para o funcionamento do motor.
 - [Encoder Rotativo 1000ppr](https://pt.aliexpress.com/item/1005005779039462.html)
+  - Responsável pela precisão na leitura da rotação do volante
 - [2x Cooler 24v](https://pt.aliexpress.com/item/1005002468157849.html)
+  - Utilizado para resfriamento do motor
 
-### Esquema eletrico do volante
+### Esquema Elétrico
 
-@todo
+Em Breve.
 
 ---
 
 ## Aro do volante
 
-### Pra que serve o aro?
+### Descrição
 
-O aro do volante é a parte do volante que o piloto segura para controlar o carro.
-
-Tem alguns botoes para controlar o carro e o jogo.
+O aro é a parte externa que o piloto segura e onde estão dispostos os controles de troca de marcha e outros botões personalizáveis. Conecta-se ao volante principal e comunica-se com o computador, permitindo interação com o jogo e ajustes durante a corrida.
 
 Utilize a programação da pasta `volante_botoes` para a programação do ESP32.
 
-### Bibliotecas utilizadas no aro
+### Imagens e Videos
+
+🚧 Em breve
+
+### Bibliotecas utilizadas
 
 - [ESP32-BLE-Gamepad](https://github.com/lemmingDev/ESP32-BLE-Gamepad/)
   - Biblioteca utilizada no ESP32 para transformar a placa em um controle de jogos via bluetooth
@@ -94,36 +146,27 @@ Utilize a programação da pasta `volante_botoes` para a programação do ESP32.
   - Biblioteca utilizada para a criação de timers
   - Utilizada para a criação de um timer para controlar a `piscada` do led On/Off e de conexão
 
-### Funcionalidades do aro
+### Funcionalidades
 
-- Ações dentro do jogo
-  - Troca de marcha
-  - Comunicação com a equipe
-  - Controle de tração
-  - Controle de freio
-  - Pause / Resume
-  - Menu
-- On/Off
-- Conexão via bluetooth ou cabo USB C
-- 12 botões personalizaveis
-- 2 trocas de marcha
-- Indicador de volante ligado
-- Indicador de volante conectado ao computador
+- Conexão via Bluetooth ou USB-C.
+- Troca de marcha, controle de tração e frenagem, pausa e outras ações.
+- 12 botões personalizáveis.
+- LEDs indicadores de status (ligado/conectado).
 
-### Modelos 3D do aro
+### Modelos 3D
 
 - [Aro do volante F1](https://www.thingiverse.com/thing:4891321)
-  - Utilizado para a impressão do aro do volante
+  - Para impressão do aro.
 - [Saque rapido / Quick Release](https://www.thingiverse.com/thing:2749233)
-  - Utilizado para trocar o aro do volante rapida e facilmente
+  - Para troca rápida do aro.
 
-### Hardware e peças do aro
+### Componentes e ferramentas
 
 - [ESP32 devkit](https://pt.aliexpress.com/item/1005004605399313.html)
-  - Utilizado para a comunicação entre o volante e o computador
+  - Responsável pela comunicação via Bluetooth e detecção de comandos do aro.
 - [ENDER 3 v3 KE](https://www.creality.com/products/creality-ender-3-v3-ke)
 - [12x Botão momentaneo](https://pt.aliexpress.com/item/1005005904666959.html)
-  - Botões utilizados para os controles do volante
+  - Configurados para funções específicas no jogo (ex. troca de marcha, menu).
 - [2x micro switch](https://pt.aliexpress.com/item/1005006085607858.html)
   - Micro switch utilizados para as trocas de marcha
 - [2x bateria 18650](https://pt.aliexpress.com/item/1005005638404503.html)
@@ -140,62 +183,59 @@ Utilize a programação da pasta `volante_botoes` para a programação do ESP32.
 - [Chave liga/desliga](https://produto.mercadolivre.com.br/MLB-1591116434-10x-mini-chave-gangorra-kcd11-101-ligadesliga-2t-3a-250v-pt-_JM)
   - Chave utilizada para ligar/desligar o volante
 
-### Esquema eletrico do aro
+### Esquema Elétrico
 
-@todo
+Em Breve
 
 ---
 
 ## Pedais
 
-### Pra que serve os pedais?
+### Descrição
 
-Os pedais são utilizados para controlar a aceleração, frenagem e embreagem do carro.
-
-Por enquanto só temos o acelerador e o freio. Não teremos embreagem pois utilizaremos o cambio via borboleta no volante.
+Os pedais são responsáveis por simular o acelerador, freio e (opcionalmente) embreagem. Atualmente, o projeto inclui apenas acelerador e freio, pois a troca de marcha será feita no volante.
 
 Utilize a programação da pasta `pedals_joystick` para a programação do Arduino Pro Micro.
 
-### Bibliotecas utilizadas nos pedais
+### Imagens e Videos
+
+🚧 Em breve
+
+### Bibliotecas utilizadas
 
 - [SimRacing](https://github.com/dmadison/Sim-Racing-Arduino)
   - Biblioteca utilizada para a comunicação entre os pedais e o computador
 - [Joystick](https://github.com/MHeironimus/ArduinoJoystickLibrary)
   - É uma dependencia da biblioteca `SimRacing`
 - [Bounce2](https://github.com/thomasfredericks/Bounce2)
-  - Biblioteca utilizada para a leitura de botões com debounce evitando multiplos acionamentos
+  - Biblioteca utilizada para a leitura de botões com debounce evitando múltiplos acionamentos
 
-### Funcionalidades dos pedais
+### Funcionalidades
 
-- Acelerador
-- Freio
-- Calibração dos pedais
-  - Botão momentaneo para calibrar os pedais
-  - Calibração do minimo e maximo dos pedais pisando os pedais no minimo e maximo
-- Indicador de calibração
-  - LED off -> Pedal não calibrado e calibração não iniciada
-  - LED on -> Pedal calibrado
-  - LED piscando -> Pedal não calibrado e calibração iniciada
+- Acelerador e freio com calibração de mínima e máxima.
+- Indicador de status de calibração via LED.
+- Sensibilidade dos pedais ajustável.
 
-### Modelos 3D dos pedais
+### Modelos 3D
 
 - [SIM RACING PEDAL](https://cults3d.com/en/3d-model/game/sim-racing-pedal)
   - Utilizado para a impressão dos pedais
   - Acelerador
   - Freio
 
-### Hardware e peças dos pedais
+### Componentes e ferramentas
 
 - [Arduino Pro Micro Type C](https://pt.aliexpress.com/item/1005006654641959.html)
-  - Controladora dos pedais e comunicação do hardware com o computador
+  - Controla a comunicação dos pedais com o computador.
 - [ENDER 3 v3 KE](https://www.creality.com/products/creality-ender-3-v3-ke)
 - [Botao momentaneo](https://pt.aliexpress.com/item/1005005904666959.html)
   - Botão utilizado para calibrar o minimo e o maximo dos pedais
 - [2x Molas de rodoar de caminhao](https://produto.mercadolivre.com.br/MLB-1501615041-mola-cromada-rodoar-rodo-ar-caminhao-15-unidades-_JM)
-  - Molas utilizadas para o retorno dos pedais a posição inicial
+  - Responsáveis pelo retorno dos pedais à posição inicial.
 - [2x Sensor hall 49e](https://pt.aliexpress.com/item/32852539663.html)
   - Sensor utilizado para a leitura das posições dos pedais
 - [2x Imãs de neodimino 8x5mm](https://produto.mercadolivre.com.br/MLB-1463589800-im-neodimio-8x5-mm-n35-10-unidades-_JM)
+  - Usados para detectar a posição exata dos pedais.
 - [10x Rolamento 608Zz](https://www.mercadolivre.com.br/rolamentos-608-zz-abec-1-kit-com-20-pcs-8x22x7/p/MLB35811125)
   - Rolamentos utilizados para as partes moveis dos pedais
   - Utilizado para evitar o desgaste das peças
@@ -211,6 +251,26 @@ Utilize a programação da pasta `pedals_joystick` para a programação do Ardui
 - [2x Parafuso de cama 120mm](https://www.mercadolivre.com.br/parafuso-para-cama-com-porca-516-x-120mm-12-unid/p/MLB29495512)
   - Parafusos utilizados como eixo e cursor dos pedais
 
-### Esquema eletrico dos pedais
+### Esquema Elétrico
 
-@todo
+Em breve.
+
+---
+
+## Contribuição
+
+Este projeto é mantido como um trabalho em andamento e todas as contribuições são bem-vindas. Se você tiver ideias de melhorias, correções ou novos recursos, fique à vontade para abrir uma issue ou enviar um pull request. Certifique-se de seguir as diretrizes de contribuição e o padrão de codificação definidos para facilitar o processo de revisão.
+
+Para contribuir, você pode:
+
+1. Fazer um fork do repositório.
+2. Criar uma nova branch para sua funcionalidade ou correção: `git checkout -b minha-nova-funcionalidade`
+3. Fazer commit das suas alterações: `git commit -m 'Adiciona nova funcionalidade'`
+4. Enviar para a branch principal: `git push origin minha-nova-funcionalidade`
+5. Criar uma solicitação de pull request.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License. Consulte o arquivo LICENSE para mais detalhes.
+
+---
