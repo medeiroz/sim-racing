@@ -47,8 +47,6 @@ float DeadzoneMax = 0.025; // by default, 2.5%
 void setup()
 {
   Serial.begin(115200);
-  while (!Serial)
-    ;
 
   pinMode(PIN_LED, OUTPUT);
   pinMode(PIN_CALIBRATION_BUTTON, INPUT_PULLUP);
@@ -73,11 +71,11 @@ void setup()
 
 void loop()
 {
-  if (Serial.read() != -1)
-  {
-    pedals.serialCalibration();
-    delay(2000);
-  }
+  // if (Serial.read() != -1)
+  // {
+  //   pedals.serialCalibration();
+  //   delay(2000);
+  // }
 
   pedals.update();
 
