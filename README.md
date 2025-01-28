@@ -27,8 +27,8 @@ Este repositório documenta o desenvolvimento de um volante e pedais para simula
   - [x] Compra das peças
   - [x] Montagem do volante
     - [x] Adicionar botão de centralização
-    - [ ] Adicionar cooler para resfriamento
-    - [ ] Trocar o conector de eneria para um mais robusto
+    - [x] Adicionar cooler para resfriamento
+    - [x] Trocar o conector de eneria para um mais robusto
   - [x] Programação do force feedback
   - [x] Testes e ajustes
 - [x] Aro do volante
